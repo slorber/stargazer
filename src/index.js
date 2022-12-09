@@ -27,8 +27,11 @@ function RemotionVideo() {
     fetchStargazers(repoOrg, repoName, starCount).then((stargazers) => {
       setStargazers(stargazers);
       continueRender(handle);
+      console.log("setStargazers",stargazers)
     });
   }, [handle]);
+  
+  console.log("render stargazers",stargazers)
 
   return (
     <Composition
