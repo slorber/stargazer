@@ -17,6 +17,10 @@ export async function fetchStargazers(repoOrg, repoName, starCount) {
       starsLeft = starsLeft - page.length;
     }
   }
+  
+  console.log("allStargazers",typeof allStargazers);
+  console.log("allStargazers length",allStargazers.length);
+  console.log("allStargazers",allStargazers);
 
   return allStargazers;
 }
